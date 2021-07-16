@@ -59,7 +59,7 @@ h2{
     align-items: center;
 }
 .hero {
-    height: 90vh;
+    height: 76vh;
 }
 #nome_apresentação{
     margin: 15px;
@@ -70,10 +70,15 @@ h2{
     height:295px;
 
 }
-aside{
-    float: right;
-    width: 250px;
-}
 progress{
     width: 100%;
+}
+#em{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+#desen{
+    font-style: italic;
+    opacity: 0.5;
+    font-weight: lighter;
 }
