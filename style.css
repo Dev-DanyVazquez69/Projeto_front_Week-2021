@@ -5,7 +5,7 @@
 }
 body {
     width: 100%;
-    background-color: black;
+    background:linear-gradient(to bottom,black, rgb(101,189,189),black);
 }
 h1, h2, h3, h4, h5, h6, a, p{
     color: white;
@@ -28,6 +28,7 @@ h2{
     display: flex;
     justify-content: space-between;
     padding: 40px 16px;
+    background-color: rgba(0, 0, 0, 0.157);
 }
 .link{
     font-size: 15px;
@@ -63,10 +64,13 @@ h2{
 #nome_apresentação{
     margin: 15px;
 }
-#link_projetos{
-    border: 1px solid crimson;
-    padding:15px;
-background: linear-gradient(to top, rgba(255, 0, 0, 0.37), rgb(255, 255, 255));
-border-radius: 5px;
+#construcao {
+    max-width: 100%;
+    background:url("imagens/images.jpeg");
+    height:295px;
 
+}
+aside{
+    float: right;
+    width: 250px;
 }
