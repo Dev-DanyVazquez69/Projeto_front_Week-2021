@@ -74,3 +74,6 @@ aside{
     float: right;
     width: 250px;
 }
+progress{
+    width: 100%;
+}
