@@ -1,16 +1,18 @@
 h1, h2, h3, h4,p,a {
     font-family: 'Dosis', sans-serif;
-    color:$Azul;
-    font-style: italic;
+    color:$azul;
 }
 h1 {
     font-size: 52px;
+    color: white;
 }
 h2 {
     font-size: 32px;
 }
 a {
     text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 .link {
     padding: 8px 24px;
@@ -38,6 +40,50 @@ a {
         &::after{
             width: 80%;
             transition: 0.5s ease;
+        }
+    }
+}
+.mask {
+    display: inline-block;
+    background: linear-gradient(255deg,#00ffff 0%,rgb(28, 109, 109)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.square{
+    padding:16px 24px;
+    font-size: 18px;
+    font-weight: bolder;
+
+    display: inline-block;
+    margin-top: 64px;
+    position: relative;
+    left:20px;
+
+    &::after{
+        content: "";
+        display: block;
+
+        width: 120px;
+        height: 120px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+
+        transform: translate(-05%, -30%) rotate(45deg);
+        background-color: white;
+        border-radius: 4px;
+        background: linear-gradient(255deg,#00ffff 0%,rgb(28, 109, 109)100%);
+        transition: 0.5s ease;
+
+
+    }
+    &:hover{
+        &::after{
+            transform: translate(-05%, -30%) rotate(135deg);
         }
     }
 }
