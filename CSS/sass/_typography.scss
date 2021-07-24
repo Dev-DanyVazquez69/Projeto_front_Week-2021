@@ -1,0 +1,43 @@
+h1, h2, h3, h4,p,a {
+    font-family: 'Dosis', sans-serif;
+    color:$Azul;
+    font-style: italic;
+}
+h1 {
+    font-size: 52px;
+}
+h2 {
+    font-size: 32px;
+}
+a {
+    text-decoration: none;
+}
+.link {
+    padding: 8px 24px;
+    color: white;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 0%;
+        height: 2px;
+
+        background-color:$azul;
+
+        transform: translate(15%, -50%);
+
+    }
+    &:hover{
+        opacity: 0.5;
+        transition: 1s ease;
+        &::after{
+            width: 80%;
+            transition: 0.5s ease;
+        }
+    }
+}

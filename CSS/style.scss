@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "sass/_colors.scss";
+@import "sass/_typography.scss";
+
+body{
+    width: 100%;
+    background-color:$preto;
+}
+@import "sass/_spacing.scss";
+@import "sass/_layout.scss";
+
+img{
+    width: 250px;
+    height: 250px;
+}
+.border{
+    border:1px solid red;
+}
