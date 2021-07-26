@@ -8,7 +8,8 @@
 
 body{
     width: 100%;
-    background-color: $preto;
+    background: linear-gradient(to bottom, rgb(0,0,0) 15%,white, black)
+
 }
 @import "sass/_spacing.scss";
 @import "sass/_layout.scss";
